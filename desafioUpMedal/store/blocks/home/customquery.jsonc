@@ -5,7 +5,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "kit-upmedal/corinthians",
+            "queryField": "upmedal/desafios/corinthians",
             "mapField": "fq",
             "skusFilter": "ALL_AVAILABLE"
           }
@@ -20,7 +20,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "kit-upmedal/palmeiras",
+            "queryField": "upmedal/desafios/palmeiras",
             "mapField": "fq",
             "skusFilter": "ALL_AVAILABLE"
           }
@@ -35,7 +35,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "20",
+            "queryField": "28",
             "mapField": "c",
             "skusFilter": "ALL_AVAILABLE"
           }
@@ -52,7 +52,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "kit-upmedal/corinthians",
+            "queryField": "upmedal/desafios/corinthians",
             "mapField": "fq",
             "skusFilter": "ALL_AVAILABLE"
           }
@@ -67,7 +67,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "kit-upmedal/palmeiras",
+            "queryField": "upmedal/desafios/palmeiras",
             "mapField": "fq",
             "skusFilter": "ALL_AVAILABLE"
           }
@@ -82,7 +82,7 @@
             "orderByField": "OrderByPriceDESC",
             "hideUnavailableItems": true,
             "maxItemsPerPage": 8,
-            "queryField": "20",
+            "queryField": "28",
             "mapField": "c",
             "skusFilter": "ALL_AVAILABLE"
           }

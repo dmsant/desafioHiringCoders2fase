@@ -1,0 +1,11 @@
+.flexRowContent--flexrowcontentheader, .flexRowContent--flexrowcontentheadermobile, .flexRowContent--flexrowcontentfooter {
+    background-color: #000000;
+}
+.flexRowContent--flexrowcontentfooter {
+    background-color: #424242;
+    justify-content: center;
+}
+.flexCol--flexcolcontentfooter {
+    justify-content: center;
+    align-items: center;
+}

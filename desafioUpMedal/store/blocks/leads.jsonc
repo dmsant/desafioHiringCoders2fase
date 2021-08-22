@@ -1,0 +1,32 @@
+{
+    "store.custom#leads": {
+        "blocks": [
+            "flex-layout.row#leads"
+        ]
+    },
+    "flex-layout.row#leads": {
+        "children": [
+            "flex-layout.col#spacerlead",
+            "flex-layout.col#leads"
+        ]
+    },
+    "flex-layout.col#spacerlead":{
+        "props":{
+            "width":"40%"
+        }
+    },
+    "flex-layout.col#leads": {
+        "children": [
+            "rich-text#leads",
+            "leads"
+        ]
+    },
+    "rich-text#leads": {
+        "props": {
+          "text": "### Parabéns!!  \n #### Agora só inserir seus dados e \n #### ficará por dentro de todas nossas \n #### promoções!",
+          "textPosition": "LEFT",
+          "textAlignment": "LEFT",
+          "blockClass": "textlead"
+        }
+      }
+}

@@ -1,0 +1,43 @@
+.listContainer--tablayouthomedesktop{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    justify-content:left;
+    
+}
+.listItem :global(.vtex-button){
+    color:#fff;
+    font-size: 0.875rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-transform: uppercase;
+    
+}
+.listItemActive :global(.vtex-button){
+    color:#59ff00;
+    font-size: 0.875rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: normal;
+    text-transform: uppercase;
+    background-color: black;
+    border-top: black;
+    border-left:black ;
+    border-right: black;
+    border-bottom-color:#59ff00;
+    border-bottom-left-radius: 0mm;
+    border-bottom-right-radius: 0mm;
+}
+.listContainer--tablayouthomemobile{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    justify-content:left;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}

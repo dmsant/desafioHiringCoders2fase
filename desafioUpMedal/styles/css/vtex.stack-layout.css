@@ -1,0 +1,14 @@
+.stackItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content:left;
+}
+.stackContainer{
+    margin-top: 6mm;
+    align-items: center;
+}
+.stackItem--imagestackpromocaomobile{
+   justify-content:center;
+}

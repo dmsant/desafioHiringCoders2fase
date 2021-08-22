@@ -1,0 +1,114 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+  },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"flexrowcontentheader"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar#desktop",
+      //"locale-switcher",
+      //"login",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ]
+  },
+  "search-bar#desktop":{
+    "props":{
+      "blockClass":"searchheaderdesktop"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logoheader.png",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      //"drawer",
+      "flex-layout.col#logo-mobile",
+      //"flex-layout.col#spacer",
+      //"login",
+      "search-bar#mobile",
+      "minicart.v2#mobile"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "blockClass":"flexrowcontentheadermobile"
+    }
+  },
+  /*"drawer": {
+    "children": []
+  }*/
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#mobile"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logoheader.png",
+      "width": "80"
+    }
+  },
+  "minicart.v2#mobile":{
+    "props":{
+      "blockClass":"minicartheadermobile"
+    },
+    "children":[
+      "minicart-base-content"
+    ]
+  },
+  "search-bar#mobile":{
+    "props":{
+      "blockClass":"searchheadermobile"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.nameWrapper{
+    color:white;  
+}
+.brandName{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+.clearLink{
+    background-color: #424242;
+    width: 100%;
+}
+.element :global(.vtex-button){
+    background-color: #59ff00;
+    border: #59ff00;
+    
+}
+.element:hover :global(.vtex-button){
+    background-color: rgb(62, 178, 0);
+    border: rgb(62, 178, 0);
+}
+
+
+
+

@@ -1,0 +1,280 @@
+{
+  "store.home": {
+    "blocks": [
+      /*Definimos aqui os blocos de resposta para Desktop e Mobile */
+      "responsive-layout.desktop#home",
+      "responsive-layout.mobile#home"
+    ]
+  },
+  /*Inicio da configuração da resposta ao DESKTOP. Assim como no MOBILE 
+  foi definido um container flex-layout para estrutura da página*/
+  "responsive-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#containerhome"
+    ]
+  },
+  "flex-layout.row#containerhome": {
+    "children": [
+      "tab-layout#homedesktop"
+    ]
+  },
+  /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
+  nos arquivos tab_lis_item e tab_content_item respectivamente*/
+  "tab-layout#homedesktop": {
+    "children": [
+      "sticky-layout",
+      "tab-content#home"
+    ]
+  },
+  //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-list no topo
+  "sticky-layout": {
+    "children": [
+      "tab-list#home"
+    ],
+    "props": {
+      "position": "top",
+      "verticalSpacing": 64
+    }
+  },
+  // Inicio das declarações dos itens comuns do tab-content desktop
+  "slider-layout#home": {
+    "children": [
+      "image#banner1",
+      "image#banner2"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1
+      }
+    }
+  },
+  "image#banner1": {
+    "props": {
+      "src": "assets/banner1.png",
+      "maxWidth": "60%",
+      "blockClass": "banner1"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "assets/banner2.png",
+      "maxWidth": "60%",
+      "blockClass": "banner2"
+    }
+  },
+
+   //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#search"
+    ]
+  },
+  "flex-layout.row#search": {
+    "children": [
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content",
+      "search-fetch-more"
+    ]
+  },
+  "search-content": {
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
+  },
+  "gallery": {
+    "props": {
+      "blockClass":"teste",
+      "layouts": [
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-space",
+      "product-price",
+      "product-summary-space",
+      "add-to-cart-button#home"
+    ]
+  },
+  "add-to-cart-button#home": {
+    "props": {
+      "onClickBehavior": "go-to-product-page",
+      "text": "Ver Detalhes",
+      "blockClass": "productsummaryhome"
+    }
+  },
+
+  // Infocard utilizado na página de promoção para captura de Leads
+  "info-card#promocao": {
+    "props": {
+      "id": "info-card-leads",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/pugnocomputador.jpg",
+      "subhead": "Quer receber nossas promçoes? <br><br>Deixe que nosso mascote envia ;)",
+      "callToActionText": "Cadastre-se",
+      "callToActionUrl": "/leads",
+      "blockClass": "info-card-leads",
+      "textAlignment": "center"
+    }
+  },
+
+  /*Inicio da configuração da resposta ao MOBILE. Assim como no DESKTOP 
+  foi definido um container flex-layout para estrutura da página*/
+  "responsive-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#containerhomemobile"
+    ]
+  },
+  "flex-layout.row#containerhomemobile": {
+    "children": [
+      "tab-layout#homemobile"
+    ]
+  },
+
+  /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
+  nos arquivos tab_lis_item e tab_content_item respectivamente*/
+  "tab-layout#homemobile": {
+    "children": [
+      "sticky-layout#homemobile",
+      "tab-content#homemobile"
+    ]
+  },
+
+    //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-lis no topo
+  "sticky-layout#homemobile": {
+    "children": [
+      "tab-list#homemobile"
+    ],
+    "props": {
+      "position": "top",
+      "verticalSpacing": 62
+    }
+  },
+
+  //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
+  "slider-layout#homemobile": {
+    "children": [
+      "image#banner1mobile",
+      "image#banner2mobile"
+    ],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "mobile": 1
+      },
+      "showNavigationArrows":"desktopOnly"
+    }
+  },
+  "image#banner1mobile": {
+    "props": {
+      "src": "assets/banner1.png",
+      "maxWidth": "100%",
+      "blockClass": "banner1"
+    }
+  },
+  "image#banner2mobile": {
+    "props": {
+      "src": "assets/banner2.png",
+      "maxWidth": "100%",
+      "blockClass": "banner2"
+    }
+  },
+  "stack-layout#promocaomobile":{
+    "children":[
+      "image#stackpromocaomobile",
+      "link#stackpromocaomobile"
+    ]
+  },
+  "image#stackpromocaomobile": {
+       "props": {
+         "blockClass": "imagestackpromocaomobile",
+         "width": "95%",
+         "src": "assets/pugnocomputadormobile.jpg"
+       }
+     },
+     "link#stackpromocaomobile": {
+       "props": {
+         "displayMode": "button",
+         "buttonProps": {
+           "variant": "primary",
+           "size": "large"
+         },
+         "href": "/leads",
+         "label": "Cadastre-se!"
+       }
+     },
+
+     //Configuração do Custom Query mobile, como que o produto aparece na home mobile!!!
+     "search-result-layout.mobile": {
+      "children": [
+        "flex-layout.row#searchmobile"
+      ]
+    },
+    "flex-layout.row#searchmobile": {
+      "children": [
+        "flex-layout.col#searchmobile"
+      ]
+    },
+    "flex-layout.col#searchmobile": {
+      "children": [
+        "search-content#mobile",
+        "search-fetch-more"
+      ]
+    },
+    "search-content#mobile": {
+      "blocks": [
+        "gallery#mobile",
+        "not-found"
+      ]
+    },
+    "gallery#mobile": {
+      "props": {
+        "layouts": [
+          {
+            "name": "one",
+            "component": "OneLineSummary",
+            "itemsPerRow": 1
+          }
+        ],
+        "OneLineSummary": "product-summary.shelf#mobile"
+      }
+    },
+    "product-summary.shelf#mobile": {
+      "children": [
+        "product-summary-name",
+        "product-images",
+        "product-summary-space",
+        "product-price",
+        "product-summary-space",
+        "add-to-cart-button#homemobile"
+      ]
+    },
+    "add-to-cart-button#homemobile": {
+      "props": {
+        "onClickBehavior": "go-to-product-page",
+        "text": "Ver Detalhes",
+        "blockClass": "productsummaryhome"
+      }
+    }
+}

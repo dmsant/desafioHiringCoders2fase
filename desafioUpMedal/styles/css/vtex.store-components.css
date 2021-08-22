@@ -1,0 +1,62 @@
+.container{
+    background-color: #303030;
+    padding:0px;
+}
+.searchBarInnerContainer--searchheaderdesktop  {
+    width: 700px; 
+}
+.searchBarContainer :global(.vtex-input__suffix){
+    background-color: black;    
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    background-color: black;   
+}
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border-top: 0cm; 
+    border-left: 0cm; 
+    border-right: 0cm; 
+    border-bottom-left-radius: 0cm;
+    border-bottom-right-radius: 0cm;
+}
+.searchBarIcon{
+    color:white;
+}
+.imageElement--banner1{
+    border-radius: 4mm;
+    margin: 3mm;
+    
+}
+.imageElement--banner2{
+    border-radius: 4mm;
+}
+.infoCardImage--info-card-leads{
+    width: 370px;
+    height: 200px;
+    border-radius: 2mm;
+    margin: 4mm;
+}
+.infoCardSubhead--info-card-leads{
+    color: #59ff00;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 70mm;
+}
+.infoCardCallActionContainer :global(.vtex-button){
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3mm;
+    margin-left: 70mm;
+}
+.currencyContainer{
+    color:#59ff00;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.imageElement--imagestackpromocaomobile {
+    object-fit: cover;
+    border-radius: 3mm;
+  }
+.searchBarInnerContainer--searchheadermobile {
+    width: 100%; 
+  }

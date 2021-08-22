@@ -1,0 +1,13 @@
+.buttonLink {
+    color:white;
+    background-color: black;
+    border-color: black;
+    border-radius: 3mm;
+    max-width: fit-content;
+    font-size: 0.9rem;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    }
+.label {
+    padding: 2mm;
+}

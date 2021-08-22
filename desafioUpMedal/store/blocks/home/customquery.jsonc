@@ -1,0 +1,94 @@
+{
+    "search-result-layout.customQuery#corinthians": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "kit-upmedal/corinthians",
+            "mapField": "fq",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.desktop"
+        ]
+      },
+      "search-result-layout.customQuery#palmeiras": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "kit-upmedal/palmeiras",
+            "mapField": "fq",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.desktop"
+        ]
+      },
+      "search-result-layout.customQuery#todos": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "20",
+            "mapField": "c",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.desktop"
+        ]
+      },
+      //MOBILE
+      
+    "search-result-layout.customQuery#corinthiansmobile": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "kit-upmedal/corinthians",
+            "mapField": "fq",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.mobile"
+        ]
+      },
+      "search-result-layout.customQuery#palmeirasmobile": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "kit-upmedal/palmeiras",
+            "mapField": "fq",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.mobile"
+        ]
+      },
+      "search-result-layout.customQuery#todosmobile": {
+        "props": {
+          "querySchema": {
+            "orderByField": "OrderByPriceDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "20",
+            "mapField": "c",
+            "skusFilter": "ALL_AVAILABLE"
+          }
+        },
+        "blocks": [
+          "search-result-layout.mobile"
+        ]
+      }
+}
